@@ -1,0 +1,426 @@
+<!-- CHECKPOINT 3 - FRONTEND -->
+<!-- PÁGINA INICIAL -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="sortcut icon" href="./assets/img/logo.png"/>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- FavIcon -->
+    <link rel="icon" href="favicon.icon" type="image/x-icon">
+
+    <!-- Font Awesome icons -->
+    <script src="https://kit.fontawesome.com/8ba80f8d9e.js" crossorigin="anonymous"></script>
+
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+
+    <!-- Navbar css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>"ALMANAQUE HACKER ACADEMY"</title>
+</head>
+
+<body id="page-top">
+    <!-- NAVEGAÇÃO (NAV) -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.png" alt="..." /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html#page-top">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#caminhos">Almanaque</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#team">Equipe</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Descrição + botão banner -->
+    <header class="masthead">
+        <div class="container">
+            <div class="masthead-subheading">Quer se desenvolver na área de CYBERSECURY? Então venha para</div>
+            <div class="masthead-heading text-uppercase">ALMANAQUE HACKER ACADEMY</div>
+            <a class="btn btn-primary btn-xl text-uppercase" href="#caminhos">Escolha seu time</a>
+        </div>
+    </header>
+
+    <!-- CAMINHOS DE EESTUDO -->
+    <section class="page-section" id="caminhos">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Escolha sua trilha de estudos:</h2>
+                <h3 class="section-subheading text-muted">Ao escolher sua trilha de estudos, será mais fácil de
+                    traçar sua linha de aprendizado dentro do seu interesse e objetivo. Sendo assim, tornará sua
+                    experiência mais dinâmica e positiva. Você poderá alternar entre as equipes conforme for evoluindo no seu estudo. Agora vamos lá, escolha o seu time!💪🏾</h3>
+            </div>
+            
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-light-side"></i>
+                        <i class="fab "></i>
+                    </span>
+                    <h4 class="my-3">Blue Team</h4>
+                    <p class="text-muted" id='text-pblue'>
+                        O Blue Team monitora o Red Team e compartilha insights 
+                        sobre as atividades e testes do Red Team, em um esforço para descobrir 
+                        fraquezas mais profundas no sistema.
+                    </p>
+                </div>
+
+                <div class="col-md-6">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-dark-side"></i>
+                        <i class="fas fa-dragon"></i>
+                    </span>
+                    <h4 class="my-3">Red Team</h4>
+                    <p class="text-muted" id='text-pred'>
+                        O Red Team aconselha sobre como priorizar o gerenciamento de 
+                        vulnerabilidade e correção de falhas críticas. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tecnologias Grid TEAM BLUE E TEAM RED-->
+    <section class="page-section bg-light" id="portfolio">
+        <div class="container">
+            <div class="text-center" id="frontend">
+                <h2 class="section-heading text-uppercase">Blue Team</h2>
+                <h3 class="section-subheading text-muted">Esta formação faz parte do nosso curso de Blue Team</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+
+                    <!-- Tecnologia PADRÕES DE SEGURANÇA E MELHORIAS -->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/1.png" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">PADRÕES DE SEGURANÇA E MELHORIAS</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+
+                    <!-- Tecnologia IDENTIFICAÇÃO DE VULNERABILIDADES E ANÁLISE DE RISCOS -->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/2.png" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">IDENTIFICAÇÃO DE VULNERABILIDADES E ANÁLISE DE RISCOS</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+
+                    <!-- Tecnologia TECNOLOGIAS DE DEFESA CIBERNÉTICA -->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/3.png" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">TECNOLOGIAS DE DEFESA CIBERNÉTICA</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Red Team</h2>
+                    <h3 class="section-subheading text-muted">Esta formação faz parte do nosso curso de Red Team</h3>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    
+                    <!-- ADVANCED PENTEST TEST -->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/4.png" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">ADVANCED PENTEST TEST</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+
+                    <!-- FERRAMENTAS VARREDURA DE VULNERABILIDADES -->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/5.png" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">FERRAMENTAS VARREDURA DE VULNERABILIDADES</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+
+                    <!-- Tecnologia ENGENHARIA SOCIAL (OSINT) -->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/6.png" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">ENGENHARIA SOCIAL (OSINT)</div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- EQUIPE DE PROFESSORES (ALUNOS) -->
+    <section class="page-section bg-light" id="team">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Nossa Equipe</h2>
+                <h3 class="section-subheading text-muted">Certified Tech Developer</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/1.jpeg" alt="..." />
+                        <h4>Rafael Vilela</h4>
+                        <br>
+                        <a class="btn btn-dark btn-social mx-2" href="https://github.com/vilelarvb" target="_blank"><i class="fab fa-github"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/vilelarvb/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/2.jpeg" alt="..." />
+                        <h4>Eduardo Sakamoto</h4>
+                        <br>
+                        <a class="btn btn-dark btn-social mx-2" href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in//" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/3.png" alt="..." />
+                        <h4>Hebert Santos</h4>
+                        <br>
+                        <a class="btn btn-dark btn-social mx-2" href="https://github.com/"target="_blank"><i class="fab fa-github"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            >
+    </section>  
+
+    <!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 text-lg-start">Copyright &copy; 2021</div>
+                <div class="col-lg-4 text-lg-start">Desenvolvido por <a href="https://github.com/vilelarvb" target="_blank">ALMANAQUE HACKER</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Tecnologias Modals-->
+    <!-- Tecnologia 1 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Detalhes tecnologia PADRÕES DE SEGURANÇA E MELHORIAS -->
+                                <h2 class="text-uppercase">PADRÕES DE SEGURANÇA E MELHORIAS</h2>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.png" alt="..." />
+                                <p>Baseada na ISO 27001, os padrões de segurança da informação visam a melhor forma de garantir a segurança em todos os aspectos, assim como combater crimes virtuais e prevenir, por isso clientes, fornecedores e parceiros de uma organização certificada com a ISO 27001 obtêm a máxima  garantia de segurança e confiabilidade. Também se faz necessário a nelhoria continua. 
+                                
+                                A adoção da norma ISO 27001 possibilita que as organizações utilizem um modelo adequado de implementação, operação, monitoramento, análise critica, manutenção e melhoria do Sistema de Gestão de Segurança da Informação (SGSI). </p>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-times me-1"></i>
+                                    Fechar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Tecnologia 2 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Detalhes tecnologia IDENTIFICAÇÃO DE VULNERABILIDADES E ANÁLISE DE RISCOS -->
+                                <h2 class="text-uppercase">IDENTIFICAÇÃO DE VULNERABILIDADES E ANÁLISE DE RISCOS</h2>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.png" alt="..." />
+                                <p>Identificação, análise e avaliação de riscos na segurança patrimonial visa identificar e analisar as ameças e vulnerabilidades da segurança da organização.
+                                
+                                O gerenciamento de riscos de segurança cibernética leva a ideia do gerenciamento de riscos do mundo real e aplica-o ao mundo cibernético. isto envolve a identificação de seus riscos e vulnerabilidades e a aplicação de ações administrativas e soluções abrangentes para garantir que a sua organização esteja adequadamente protegida.
+
+                                Para mitigar os riscos cibernéticos as empresas lançam mão de várias soluções tecnológicas, mas como é praticamente impossível estar imune aos ataques cibernéticos, algumas empresas começam a incluir no portfólio de gerenciamento de riscos o Seguros Cibernéticos que as amparem em caso de incidentes e prejuízos online.
+                                    
+                                </p>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-times me-1"></i>
+                                    Fechar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Tecnologia 3 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Detalhes tecnologia -->
+                                <h2 class="text-uppercase">TECNOLOGIAS DE DEFESA CIBERNÉTICA</h2>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.png" alt="..." />
+                                <p>A defesa cibernética se refere a um conjunto de práticas que visam proteger servidores, computadores, sistemas eletrônicos, redes, dispositivos e dados de ataques de cibercriminosos — pessoas mal-intencionadas que atuam no mundo virtual.</p>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-times me-1"></i>
+                                    Fechar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Tecnologia 4 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Detalhes tecnologia ADVANCED PENTEST TEST -->
+                                <h2 class="text-uppercase">ADVANCED PENTEST TEST</h2>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.png" alt="..." />
+                                <p>O teste de intrusão, também traduzido como "teste de penetração", é um método que avalia a segurança de um sistema de computador ou de uma rede, simulando um ataque de uma fonte maliciosa. </p>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-times me-1"></i>
+                                    Fechar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Tecnologia 5 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Detalhes tecnologia FERRAMENTAS VARREDURA DE VULNERABILIDADES -->
+                                <h2 class="text-uppercase">FERRAMENTAS VARREDURA DE VULNERABILIDADES</h2>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.png" alt="..." />
+                                <p>As ferramentas de verificação de vulnerabilidades ajudam a detectar brechas de segurança nos aplicativos, sistemas operacionais, hardware e sistemas de rede.
+
+                                Os hackers estão procurando ativamente essas brechas para usá-las em proveito próprio. As vulnerabilidades dentro de uma rede precisam ser identificadas e corrigidas imediatamente para deixar seus atacantes à distância.
+                                    
+                                Os scanners de vulnerabilidade são uma maneira correta de fazer isso. Com seus procedimentos de rastreamento contínuo e automatizado, eles podem verificar a rede em busca de possíveis brechas.
+                                    
+                                Está na sua Internet ou em qualquer dispositivo, eles ajudariam os departamentos de TI e segurança a identificar a vulnerabilidade e corrigi-la manual e automaticamente.</p>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-times me-1"></i>
+                                    Fechar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Tecnologia 6 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Detalhes tecnologia ENGENHARIA SOCIAL (OSINT) -->
+                                <h2 class="text-uppercase">ENGENHARIA SOCIAL (OSINT)</h2>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.png" alt="..." />
+                                <p>Engenharia social é uma técnica empregada por criminosos virtuais para induzir usuários desavisados a enviar dados confidenciais, infectar seus computadores com malware ou abrir links para sites infectados. Além disso, os hackers podem tentar explorar a falta de conhecimento do usuário.</p>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-times me-1"></i>
+                                    Fechar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+</html>
